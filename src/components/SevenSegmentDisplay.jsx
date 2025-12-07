@@ -22,11 +22,13 @@ const SEGMENT_MAP = {
 };
 
 export function SevenSegmentDisplay({ value, active = true }) {
+  // for now uses this segment map to light up segments based on the input value (0-15)
   const segments = SEGMENT_MAP[value] || [false, false, false, false, false, false, false];
   
   const segmentClass = (isOn) =>
-    `transition-all duration-200 ${
+    `transition-all duration-400 ${
       active && isOn
+      // if active and segment is on
         ? 'fill-red-500 drop-shadow-[0_0_8px_rgba(239,68,68,0.8)]'
         : 'fill-gray-800 dark:fill-gray-700'
     }`;

@@ -4,6 +4,8 @@ import { Binary, Calculator, Lightbulb } from 'lucide-react';
 import SevenSegmentDecoder from "./Tab-7-seg-Decoder.jsx"
 import BinaryRepresentation from "./Tab-Binary-Rep.jsx"
 import { Card } from '@/components/ui/card.tsx';
+import ComingSoon from "./CommingSoon.jsx"
+import Footer from "./footer";
 
 // import ALUComponent from "./Tab-ALU.jsx"
 
@@ -52,27 +54,36 @@ export default function MainContent() {
         <main className="container mx-auto px-4 py-8">
           <Tabs defaultValue="decoder" className="space-y-6">
             <TabsList className="grid w-full grid-cols-3 lg:w-auto lg:inline-grid bg-black/40 backdrop-blur border border-blue-500/30">
-              <TabsTrigger value="decoder" className="data-[state=active]:bg-blue-600">
+              <TabsTrigger value="decoder" className="data-[state=active]:bg-blue-600 data-[state=inactive]:text-white">
                 <Lightbulb className="w-4 h-4 mr-2" />
                 7-Segment Decoder
               </TabsTrigger>
-              <TabsTrigger value="representation" className="data-[state=active]:bg-purple-600">
+              <TabsTrigger value="representation" className="data-[state=active]:bg-purple-600 data-[state=inactive]:text-white">
                 <Binary className="w-4 h-4 mr-2" />
                 Binary Representation
               </TabsTrigger>
-              <TabsTrigger value="alu" className="data-[state=active]:bg-green-600">
+              <TabsTrigger value="alu" className="data-[state=active]:bg-green-600 data-[state=inactive]:text-white">
                 <Calculator className="w-4 h-4 mr-2" />
                 ALU Operations
               </TabsTrigger>
             </TabsList>
+
+
             {/* 7-Segment Decoder Tab */}
             <SevenSegmentDecoder />
             {/* Binary Representation Tab */}
             {/* <BinaryRepresentation /> */}
 
 
+            {/* Coming Soon Tab */}
+            
+             <TabsContent value="representation" className="space-y-6"> 
+                <ComingSoon />
+             </TabsContent>
 
-          
+            <TabsContent value="alu" className="space-y-6"> 
+                <ComingSoon />
+             </TabsContent>
 
 
             {/* ALU Tab */}
@@ -81,6 +92,9 @@ export default function MainContent() {
             </TabsContent>
           </Tabs>
         </main>
+
+        {/* Footer */}
+        <Footer />
     </div>
 
     

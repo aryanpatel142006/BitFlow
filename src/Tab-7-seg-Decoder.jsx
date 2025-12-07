@@ -18,6 +18,7 @@ export default function SevenSegmentDecoder() {
   const bitsToNumber = (bits) => {
     //  takes state input and maps to 0 or 1 and joins them creating a string which is converted to binary/base 2
     return parseInt(bits.map(b => b ? '1' : '0').join(''), 2);
+
   };
     return (
         <div>
@@ -29,6 +30,8 @@ export default function SevenSegmentDecoder() {
                 {/* <SevenSegmentDisplay value={1} active={true} /> */}
                 {/* <BinaryInput bits={[false, true, false, true]} onChange={() => {}} /> */}
 
+                {/*  #region Left Side: Binary Input Card */}
+                {/* Left Side: Binary Input Card */}
                 <Card className="p-6 bg-gradient-to-br from-gray-900/90 to-gray-800/90 border-2 border-blue-500/30 backdrop-blur">
                   <div className="space-y-6">
                     <div>
@@ -49,6 +52,7 @@ export default function SevenSegmentDecoder() {
                         <div>
                           <div className="text-xs text-gray-400 mb-1">Hexadecimal</div>
                           <div className="text-3xl font-mono font-bold text-purple-400">
+                            {/* Hex ouptut :) */}
                             0x{bitsToNumber(inputBits).toString(16).toUpperCase()}
                           </div>
                         </div>
@@ -61,20 +65,24 @@ export default function SevenSegmentDecoder() {
                         <li>Digital logic and combinational circuits</li>
                         <li>Boolean minimization using Karnaugh Maps</li>
                         <li>Segment-driving logic equations (a-g)</li>
-                        <li>Truth tables for hexadecimal digits (0-F)</li>
+                        {/* <li>Truth tables for hexadecimal digits (0-F)</li> */}
                       </ul>
                     </div>
                   </div>
                 </Card>
+                {/*   #endregion */}
 
-                {/* <Card className="p-6 bg-gradient-to-br from-gray-900/90 to-gray-800/90 border-2 border-red-500/30 backdrop-blur">
+
+                 {/*  #region 7-Segment Display Card */}
+
+                <Card className="p-6 bg-gradient-to-br from-gray-900/90 to-gray-800/90 border-2 border-red-500/30 backdrop-blur">
                   <div className="space-y-4">
                     <div>
                       <h2 className="text-2xl font-bold text-white mb-2">7-Segment Display</h2>
-                      <p className="text-sm text-gray-400">Hardware-style LED output visualization</p>
+                      <p className="text-sm text-gray-400">7-Segment Display Simulation | Hardware-style LED output visualization</p>
                     </div>
                     
-                    <div className="flex justify-center bg-black rounded-xl p-8 border-4 border-gray-700 shadow-[inset_0_0_20px_rgba(0,0,0,0.5)]">
+                    <div className="flex justify-center bg-black rounded-xl p-8 border-4 border-gray-700 shadow-xl shadow-red-900/50">
                       <SevenSegmentDisplay value={bitsToNumber(inputBits)} active={true} />
                     </div>
 
@@ -101,7 +109,9 @@ export default function SevenSegmentDecoder() {
                       ))}
                     </div>
                   </div>
-                </Card> */}
+                </Card>
+
+                {/*  #endregion */}
               </div>
             </TabsContent>
         </div>
