@@ -1,13 +1,13 @@
 import React from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "./components/ui/tabs"
 import { Binary, Calculator, Lightbulb } from 'lucide-react';
-import SevenSegmentDecoder from "./Tab-7-seg-Decoder.jsx"
-import BinaryRepresentation from "./Tab-Binary-Rep.jsx"
+import SevenSegmentDecoderTab from "./Tab-7-seg-Decoder.jsx"
+import BinaryRepresentationTab from "./Tab-Binary-Rep.jsx"
 import { Card } from '@/components/ui/card.tsx';
 import ComingSoon from "./CommingSoon.jsx"
 import Footer from "./footer";
+import { ALUComponent } from "./Tab-ALU.jsx"
 
-// import ALUComponent from "./Tab-ALU.jsx"
 
 export default function MainContent() {
   return (
@@ -70,9 +70,9 @@ export default function MainContent() {
 
 
             {/* 7-Segment Decoder Tab */}
-            <SevenSegmentDecoder />
+            <SevenSegmentDecoderTab />
             {/* Binary Representation Tab */}
-            {/* <BinaryRepresentation /> */}
+            {/* <BinaryRepresentationTab /> */}
 
 
             {/* Coming Soon Tab */}
@@ -87,9 +87,9 @@ export default function MainContent() {
 
 
             {/* ALU Tab */}
-            <TabsContent value="alu" className="space-y-6">
-              {/* <ALUComponent /> */}
-            </TabsContent>
+            {/* <TabsContent value="alu" className="space-y-6">
+              <ALUComponent />
+            </TabsContent> */}
           </Tabs>
         </main>
 

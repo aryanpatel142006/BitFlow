@@ -1,11 +1,18 @@
-import React from "react";
+import { React, useState } from "react";
 
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "./components/ui/tabs.js"
-
+import { BinaryRepresentation } from "./components/BinaryRepresentation.jsx";
 import { Card } from '@/components/ui/card';
+// import { BinaryInput } from '@/components/BinaryInput';
 
 
-export default function BinaryRepresentation() {
+export default function BinaryRepresentationTab() {
+      const [inputBits, setInputBits] = useState([false, false, false, false]);
+        
+      const bitsToNumber = (bits) => {
+        //  takes state input and maps to 0 or 1 and joins them creating a string which is converted to binary/base 2
+        return parseInt(bits.map(b => b ? '1' : '0').join(''), 2);
+    };
     return (
         <div>
 

@@ -12,7 +12,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 
 
-export default function SevenSegmentDecoder() {
+export default function SevenSegmentDecoderTab() {
   const [inputBits, setInputBits] = useState([false, false, false, false]);
   
   const bitsToNumber = (bits) => {

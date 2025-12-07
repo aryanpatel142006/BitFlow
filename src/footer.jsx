@@ -33,6 +33,7 @@ export default function Footer() {
             <div className="mt-6 pt-6 border-t border-gray-800 text-center text-gray-500 text-xs">
               <p>BitFlow © 2025 - Educational Computer Architecture Simulator</p>
               <p className="text-white ">Made with &lt;3 by Aryan Patel!</p>
+              
             </div>
           </div>
         </footer>

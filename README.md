@@ -1,5 +1,11 @@
 # React + Vite
 
+
+    [x] Create App
+
+    [ ] Add Icon on Tab favicon
+    [ ] Complete other 2 Tabs !!
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
