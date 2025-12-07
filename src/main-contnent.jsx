@@ -94,7 +94,7 @@ export default function MainContent() {
         </main>
 
         {/* Footer */}
-        <Footer />
+        <Footer /> 
     </div>
 
     
