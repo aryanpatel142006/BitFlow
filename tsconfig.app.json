@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    /* ---------- Language & Module System ---------- */
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler", 
+    "lib": ["DOM", "ESNext"],
+    "jsx": "react-jsx",        // uses the modern JSX transform
+    "allowJs": true,           // allow .js and .jsx files
+    "checkJs": false,          // set true if you want JS type-checking
+    "resolveJsonModule": true,
+
+    /* ---------- Strictness ---------- */
+    "strict": true,
+    "isolatedModules": true,   // required for bundlers like Vite/SWC
+    "noEmit": true,            // bundler will handle compilation
+
+    /* ---------- Pathing ---------- */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]         // optional: alias support
+    }
+  },
+
+  "include": [
+    "src/**/*",
+    "src/**/*.tsx",
+    "src/**/*.jsx",
+    "src/**/*.ts",
+    "src/**/*.js"
+  ],
+
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build"
+  ]
+}

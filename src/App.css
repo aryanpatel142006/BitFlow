@@ -1,0 +1,73 @@
+#root {
+  margin: 0;
+  /* max-width: 1280px; */
+  /* margin: 0 auto; */
+  /* padding: 2rem; */
+  /* text-align: center; */
+  
+}
+
+body{
+  background-color: #0f172a;
+  /* background: oklch(0.145 0 0) !important; */
+}
+
+
+/* Circuit Board Pattern */
+.circuit-pattern {
+  background-image: 
+    linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+
+  /* -1 offset to avoid 1px line rendering errors */
+  background-position: -1px -1px, -1px -1px, -1px -1px, -1px -1px;
+}
+
+
+/* LED Glow Effects */
+@keyframes led-pulse {
+  0%, 100% {
+    filter: brightness(1) drop-shadow(0 0 8px currentColor);
+  }
+  50% {
+    filter: brightness(1.2) drop-shadow(0 0 12px currentColor);
+  }
+}
+
+.led-glow {
+  animation: led-pulse 2s ease-in-out infinite;
+}
+
+/* Digital Font Styling */
+.digital-display {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.1em;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.5);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.7);
+}
+
+/* Hide Next.js error overlay portal */
+nextjs-portal {
+  display: none !important;
+}
