@@ -1,6 +1,9 @@
 WORK IN PROGRESS :
 if you still want a sneek peek, the project is hosted at :- https://bit-logic.vercel.app/
 
+IN THE MEAN TIME YOU CAL ALSO LOOK AT THIS OTHER PROJECT :) - https://github.com/aryanpatel142006/Time-Travel
+Have a Safe Time Travel !!
+
 
 # React + Vite
 
