@@ -1,3 +1,7 @@
+WORK IN PROGRESS :
+if you still want a sneek peek, the project is hosted at :- https://bit-logic.vercel.app/
+
+
 # React + Vite
 
 
