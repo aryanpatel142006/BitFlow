@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 
 import { BinaryInput } from '@/components/BinaryInput';
-// import { BinaryRepresentation } from '@/components/BinaryRepresentation';
+import { BinaryRepresentation } from '@/components/BinaryRepresentation';
 import { SevenSegmentDisplay } from '@/components/SevenSegmentDisplay';
 import { Card } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';

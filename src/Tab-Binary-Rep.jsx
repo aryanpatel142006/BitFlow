@@ -3,7 +3,7 @@ import { React, useState } from "react";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "./components/ui/tabs.js"
 import { BinaryRepresentation } from "./components/BinaryRepresentation.jsx";
 import { Card } from '@/components/ui/card';
-// import { BinaryInput } from '@/components/BinaryInput';
+import { BinaryInput } from '@/components/BinaryInput';
 
 
 export default function BinaryRepresentationTab() {
